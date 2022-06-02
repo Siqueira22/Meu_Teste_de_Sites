@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos - flex basis</title>
+    <style>
+
+         .flex-container1{max-width: 500px;
+                        border-radius: 2px;            
+                        border: 4pX double rgb(0, 222, 74);
+                        display: flex; 
+                        background-color: darkorange;}
+                        
+         .flex-container2{max-width: 500px;
+                        border-radius: 2px;
+                        border: 4pX solid rgb(255, 0, 166);
+                        display: flex; 
+                        background-color: darkorange;}                
+         .flex-container3{max-width: 500px;
+                        border-radius: 2px;
+                        border: 4pX dotted rgb(79, 0, 0);
+                        display: flex; 
+                        background-color: darkorange;}
+         
+         .items1{background-color: rgb(0, 213, 255);
+                 color: rgb(15, 1, 63);
+                 text-align: center;
+                 margin: 5px;
+                 font-size: 20px;
+                 border: 2px solid white;
+                 border-radius: 2px; }
+         
+         .items2{background-color: rgb(33, 63, 3);
+                 color: rgb(25, 0, 0);
+                 text-align: center;
+                 margin: 5px;
+                 font-size: 20px;
+                 border: 2px solid white;
+                 border-radius: 2px; }
+         
+         .items3{background-color: rgb(0, 51, 76);
+                 color: rgb(0, 91, 30);
+                 text-align: center;
+                 margin: 5px;
+                 font-size: 20px;
+                 border: 2px solid white;
+                 border-radius: 2px; }
+
+        .bauto{flex-basis: auto;}
+
+        .fg-0{flex-grow: 0;}
+
+        .fg-1{flex-grow: 1;}
+
+        .fg-2{flex-grow: 2;}
+
+        .b-0{flex-basis: 0;}
+
+        .w100{flex-basis: 100px;}
+        
+        </style>
+
+
+
+</head>
+<body>
+
+    <p>Auto</p>
+ <div class="flex-container1">
+  
+    <div class="items1 bauto fg-1">A</div>
+    <div class="items1 bauto fg-1">BBB</div>
+    <div class="items1 bauto fg-1">C</div>
+    <div class="items1 bauto fg-1">DEF</div>
+   
+ </div>
+ 
+    <p>Basis 0</p>
+ <div class="flex-container2">
+  
+    <div class="items2 b-0 fg-1">A</div>
+    <div class="items2 b-0 fg-1">BBB</div>
+    <div class="items2 b-0 fg-1">C</div>
+    <div class="items2 b-0 fg-1">DEF</div>
+
+ </div>
+
+    <p>basis + width</p>
+ <div class="flex-container3">
+  
+    <div class="items3 w100 ">A</div>
+    <div class="items3 w100 ">BBB</div>
+    <div class="items3 w100 ">C</div>
+    <div class="items3 w100 ">DEF</div>
+   
+ </div> 
+</body>
+</html>
