@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fundamentos - justify&space</title>
+<style>
+
+               .container{
+                max-width: 500px;
+                max-height:500px;
+                border: 2px solid black;
+                margin: 0;
+                display: flex;
+                margin-bottom: 10px;}
+            .container4{
+                max-width: 300px;
+                max-height:30px;
+                border: 2px solid black;
+                margin: 2;
+                display: flex;
+                margin-bottom: 10px;
+                font-size: 7px;}
+            .container3{
+                max-width: 300px;
+                max-height:400px;
+                border: 2px solid black;
+                margin: 2;
+                display: flex;
+                margin-bottom: 10px;
+                font-size: 8px;}
+            .wrap{flex-wrap:wrap-reverse;}
+            
+                
+            .item{
+                background-color: rgb(113, 122, 85);
+                margin: 5px;
+                text-align: center;
+                color: rgb(213, 0, 0);}
+            .flex-start{justify-content: start;}
+                
+            .flex-end{justify-content: flex-end;}
+                    
+
+
+
+    
+    
+
+
+
+
+
+
+</style>
+
+
+</head>
+<body>
+    <h1>flex-start</h1>
+    <section class="container flex-start">
+<div class="item "></div>
+<div class="item "></div>
+<div class="item "></div>
+<div class="item "></div>
+<div class="item "></div>
+
+<section class="container flex-end">
+    <div class="item "></div>
+    <div class="item "></div>
+    <div class="item "></div>
+    <div class="item "></div>
+    <div class="item "></div>
+
+    <section class="container3 ">
+        <div class="item wrap">Fatos curiosos</div>
+        <p>Alguns fatos curiosos do mundo. O mundo jas do maligno</p>
+        <div class="item "></div>
+        <div class="item "></div>
+        <div class="item "></div>
+
+        <section class="container4 nowrap">
+            <div class="item ">Pagina Inicial</div>
+            <div class="item ">Forúm</div>
+            <div class="item ">Curiosidades</div>
+            <div class="item ">Quem Somos</div>
+            <div class="item ">SAQ</div>
+
+
+
+    </section>
+</body>
+</html>
