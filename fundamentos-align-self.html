@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos - align self</title>
+    <style>
+     .flex-container{display: flex;
+                     margin: 2px;
+                     background-color: bisque;
+                     max-width: 350px; 
+                     margin-bottom: 2px; 
+                     margin: 2px;
+                     }
+     
+     .item1{ background-color: rgb(0, 255, 128);
+            color:rgb(0, 0, 0);
+            font-size: 24px;
+            text-align: center;   
+            margin: 2px;
+            border: 3px dashed black;}
+
+            .item2{ background-color: rgb(0, 167, 69);
+            color:rgb(0, 0, 0);
+            font-size: 24px;
+            text-align: center;   
+            margin: 2px;
+            border: 3px ridge black}
+            .item3{ background-color: rgb(78, 248, 0);
+            color:rgb(3, 0, 0);
+            font-size: 24px;
+            text-align: center;   
+            margin: 2px;
+            border: 3px groove black}
+
+.align-container{align-items: center;} 
+
+.center{align-self: center;}
+
+.start{align-self: flex-start;}
+
+.end{align-self: flex-end;}
+
+.baseline{align-self: baseline;}
+
+.stretch{align-self: stretch;}
+
+.auto{align-self: auto;}
+
+.direction{flex-direction: column;}
+</style>
+</head>
+<body>
+    <h1>row</h1>
+    <section class="flex-container align-container">
+
+        <div class="item1 auto">AAA</div>
+        <div class="item auto">123</div>
+        <div class="item auto">Eu sou Palmerense</div>
+        <div class="item auto">item 4</div>
+        
+
+    </section>
+
+    <section class="flex-container">
+
+        <div class="item1 stretch">AAA</div>
+        <div class="item2 start">123</div>
+        <div class="item3">Eu sou Palmerense</div>
+        <div class="item3 end">item 4</div>
+        
+    </section>
+
+    <section class="flex-container">
+
+        <div class="item1 center">AAA</div>
+        <div class="item3 start">123</div>
+        <div class="item2 end">Eu sou Palmerense</div>
+        
+        
+    </section>
+
+    <h1>column
+    
+    </h1>
+
+    <section class="flex-container align-container direction">
+
+        <div class="item1 auto">AAA</div>
+        <div class="item2 auto">123</div>
+        <div class="item3 auto">Eu sou Palmerense</div>
+        <div class="item2 auto">item 4</div>
+        
+
+    </section>
+
+    <section class="flex-container direction">
+
+        <div class="item1 stretch">AAA</div>
+        <div class="item2 start">123</div>
+        <div class="item3">Eu sou Palmerense</div>
+        <div class="item1 end">item 4</div>
+        
+    </section>
+
+    <section class="flex-container direction">
+
+        <div class="item1 center">AAA</div>
+        <div class="item2 start">123</div>
+        <div class="item3 end">Eu sou Palmerense</div>
+        
+        
+    </section>
+</body>
+</html>

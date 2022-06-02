@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos - flex Grow </title>
+
+<style>
+    .flex-container{
+          display: flex;
+          border: 3px dashed white;
+          max-width: 400 px;
+          justify-content: CENTER;}
+
+    .item1{background-color: forestgreen;
+           margin: 5px;
+           padding: 10px;
+           text-align: center;
+           color: white;
+           font-size: 15px;
+           border: 4px double blue;}
+
+    .item2{background-color: yellow;
+           margin: 5px;
+           padding: 10px;
+           text-align: center;
+           color: blue;
+           font-size: 15px;
+           border: 4px double brown;}
+
+    .item3{background-color: greenyellow;
+           margin: 5px;
+           padding: 10px;
+           text-align: center;
+           color: orangered;
+           font-size: 15px;
+           border: 4px double red;}
+
+    .item4{background-color: burlywood;
+           margin: 5px;
+           padding: 10px;
+           text-align: center;
+           color: white;
+           font-size: 15px;
+           border: 4px double white;}
+
+    .item5{background-color: olive;
+           margin: 5px;
+           padding: 10px;
+           text-align: center;
+           color: black;
+           font-size: 15px;
+           border: 4px double yellow;}
+
+     .fg-0{flex-grow: 0;}
+     .fg-1{flex-grow: 1;}
+     .fg-2{flex-grow: 2;}
+     .fg-3{flex-grow: 3;}
+
+
+
+</style>
+
+
+
+</head>
+<body>
+
+    <p>flex-grow 0 CENTER</p>
+    <div class="flex-container">
+       <div class="item1 fg-0">A</div>
+       <div class="item1 fg-0">B</div>
+       <div class="item1 fg-0">C</div>
+       <div class="item1 fg-0">D</div> 
+    </div>
+
+     <p>flex-grow 0</p>
+     <div class="flex-container">
+        <div class="item2 fg-0">A</div>
+        <div class="item2 fg-3">B</div>
+        <div class="item2 fg-2">C</div>
+        <div class="item2 fg-1">D</div> 
+     </div>
+
+     <p>flex-grow 1</p>
+     <div class="flex-container">
+        <div class="item3 fg-0">A</div>
+        <div class="item3 fg-1">B</div>
+        <div class="item3 fg-2">C</div>
+        <div class="item3 fg-3">D</div> 
+     </div>
+
+     <p>flex-grow 2</p>
+     <div class="flex-container">
+        <div class="item4 fg-0">A</div>
+        <div class="item4 fg-2">B</div>
+        <div class="item4 fg-3">C</div>
+        <div class="item4 fg-1">D</div> 
+     </div>
+
+     <p>flex-grow 3</p>
+     <div class="flex-container">
+        <div class="item5 fg-0">A</div>
+        <div class="item5 fg-1">B</div>
+        <div class="item5 fg-2">C</div>
+        <div class="item5 fg-3">D</div> 
+     </div> 
+</body>
+</html>
